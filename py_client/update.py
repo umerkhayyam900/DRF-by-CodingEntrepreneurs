@@ -3,7 +3,7 @@ import requests
 endpoint = "http://localhost:8080/api/products/1/update/"
 
 data = {
-    "content": "hello my old friend",
+    "title": "World",
     "price": 123.23
 }
 

@@ -1,6 +1,6 @@
 import requests
 
-endpoint = "http://localhost:8080/api/products/1/"
+endpoint = "http://localhost:8080/api/products/3/"
 
 get_response = requests.get(endpoint, params={"abc": 123}, json={"title": "123"})
 print(get_response.json())

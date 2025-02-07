@@ -3,6 +3,8 @@ from .models import Product
 
 class ProductSerializer(serializers.ModelSerializer):
     my_discount = serializers.SerializerMethodField(read_only=True)
+    # title = serializers.CharField(required=False, default='Default Title') 
+
     class Meta:
         model = Product
         fields = [
